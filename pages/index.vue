@@ -1,7 +1,10 @@
 <script lang="ts" setup>
 definePageMeta({
   redirect: {
-    name: 'topics'
+    name: 'topics',
+    query: {
+      page: 1,
+    }
   }
 })
 </script>

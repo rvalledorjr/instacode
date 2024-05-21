@@ -19,6 +19,15 @@ watch(
     if (routeName !== 'topics') {
       return;
     }
+
+    if (!pageNumber) {
+      return navigateTo({
+        name: 'topics',
+        query: {
+          page: 1
+        }
+      });
+    }
     page.value = Number(pageNumber);
 
     window.scrollTo(0, 0);
